@@ -31,6 +31,11 @@ def read_file(file_name):
 
     return df
 
+st.set_page_config(
+    page_title="Repeting Users Checking",
+    page_icon="📚"
+)
+
 st.header("User Uniqueness Checking Simple App")
 
 st.subheader("Before Data Uploading Section")
