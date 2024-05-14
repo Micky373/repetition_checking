@@ -1,0 +1,12 @@
+pandas
+xlrd
+matplotlib
+ydata-profiling
+seaborn
+openpyxl
+mplcursors
+ipympl
+plotly
+kaleido
+streamlit
+OleFileIO_PL
