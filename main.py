@@ -68,9 +68,6 @@ if st.button('Analyse'):
             st.subheader("After Data")
 
             st.dataframe(after_df)
-
-            temp_data = after_df['Email'].value_counts()
-            temp_data = temp_data.reset_index()
         
         with st.spinner("Analysing"):
 
@@ -84,6 +81,9 @@ if st.button('Analyse'):
                 unique_users_after = after_emails - before_emails
 
                 repeting_users = after_emails.intersection(before_emails)
+
+                temp_data = after_df['Email'].value_counts()
+                temp_data = temp_data.reset_index()
 
                 st.success(f'There are {len(repeting_users)} number of repeting users')
 
