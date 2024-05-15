@@ -104,9 +104,9 @@ if st.button('Analyse'):
                 temp_data = after_df['Email'].value_counts()
                 temp_data = temp_data.reset_index()
 
-                st.success(f'There are {len(repeting_users)} number of repeting users')
+                st.success(f'There are {len(repeting_users)} repeting users')
 
-                st.success(f'There are {len(unique_users_after)} number of unique users out of {temp_data.shape[0]} users')
+                st.success(f'There are {len(unique_users_after)} unique users out of {temp_data.shape[0]} users')
 
             except:
 
